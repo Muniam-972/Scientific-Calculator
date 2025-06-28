@@ -45,7 +45,7 @@ function calculate() {
     expression = expression.replace(/(\d+)%/g, "($1/100)");
 
     try {
-        // Helper functions for degrees
+    
         const sinDeg = x => Math.sin(toRadians(x));
         const cosDeg = x => Math.cos(toRadians(x));
         const tanDeg = x => Math.tan(toRadians(x));
