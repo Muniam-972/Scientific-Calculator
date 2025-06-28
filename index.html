@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+ 
+
+        <div class="main">
+              <div class="inp">
+    <input disabled type="text"  id="input">
+   </div>
+   <div class="first_line">
+       <button class="toggle-buttons" onclick="setmode('rad')" id="radbtn" >Rad</button>
+       <button class="toggle-buttons" onclick="setmode('deg')" id="degbtn">Deg</button>
+   
+    <button  onclick="display('(')">(</button>
+    <button  onclick="display(')')">)</button>
+    <button onclick="display('%')">%</button>
+    <button onclick="ClearAll()">AC</button>
+   </div>
+   <div class="first_line">
+  
+    <button onclick="display('sin(')">sin</button>  
+    <button onclick="display('ln(')">ln</button>
+    <button onclick="display(7)">7</button>
+    <button onclick="display(8)">8</button>
+    <button onclick="display(9)">9</button>
+    <button onclick="display('/')">/</button>
+   </div>
+   <div class="first_line">
+    <button onclick="display('PI')">&pi;</button>
+    <button onclick="display('cos(')" >cos</button>
+    <button onclick="display('log(')">log</button>
+    <button onclick="display(4)">4</button>
+    <button onclick="display(5)">5</button>
+    <button onclick="display(6)">6</button>
+    <button onclick="display('*')">x</button>
+   </div>
+   <div class="first_line">
+    <button onclick="display('e')">e</button>
+    <button onclick="display('tan(')">tan</button>
+    <button onclick="display('sqrt(')">&radic;</button>
+    <button onclick="display(1)">1</button>
+    <button onclick="display(2)">2</button>
+    <button onclick="display(3)">3</button>
+    <button onclick="display('-')">-</button>
+   </div>
+   <div class="first_line">
+    <button onclick="previous()">Ans</button>
+    <button onclick="display('exp(')">EXP</button>
+    <!-- <button onclick="display('pow(')">x<sup>y</sup></button> -->
+    <button onclick="display(0)">0</button>
+    <button onclick="display('.')">.</button>
+    <button class="equal" onclick="calculate()">=</button>
+    <button onclick="display('+')">+</button>
+   </div>
+
+   <div class="para"><p>Must close the brackets before pressing "="</p>
+   </div>
+   
+        </div>
+
+
+    <script src="first.js"></script>
+</body>
+</html>
